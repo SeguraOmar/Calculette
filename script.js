@@ -9,7 +9,7 @@ window.addEventListener('click', function (e) {
         screen.value += e.target.value;
     }
     if (e.target.classList.contains('operandes')) {
-        operandes.value += e.target.value;
+        operandes.value = e.target.value;
 
         screen = secondvalue
 
@@ -29,6 +29,13 @@ window.addEventListener('click', function (e) {
             result.value = parseFloat(firstvalue.value) / parseFloat(secondvalue.value);
         }
         
+    }
+    if (e.target.classList.contains('clear')) {
+        firstvalue.value = '';
+        operandes.value = '';
+        secondvalue.value = '';
+        result.value = '';
+        screen = firstvalue
     }
  
 });

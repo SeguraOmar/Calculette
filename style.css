@@ -17,12 +17,11 @@
   
   .centered-input {
     width: 100%;
-    padding: 15px;
     font-size: 24px;
     border: none;
     background-color: #34495e;
     color: #ecf0f1;
-    border-radius: 5px;
+    
   }
   
   #touches {
