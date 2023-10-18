@@ -37,9 +37,6 @@ window.addEventListener('click', function (e) {
         result.value = '';
         screen = firstvalue
     }
-    if(e.target.classList.contains('virgule') {
-        screen.value = e.target.value;
-    }
  
 });
 
