@@ -28,6 +28,9 @@ window.addEventListener('click', function (e) {
         if (operandes.value == '/') {
             result.value = parseFloat(firstvalue.value) / parseFloat(secondvalue.value);
         }
+        if(operandes.value == '%'){
+          result.value = parseFloat(firstvalue.value) / 100 * parseFloat(secondvalue.value);
+        }
         
     }
     if (e.target.classList.contains('clear')) {
